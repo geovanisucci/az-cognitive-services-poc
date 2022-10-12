@@ -1,0 +1,1 @@
+const SAUDACOES_LIZY = "Oi! Eu sou a LIA, a inteligência artificial do Lizy ERP. A partir de agora, é só falar Oi LIA que estou te ouvindo.";

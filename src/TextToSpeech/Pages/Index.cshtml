@@ -75,10 +75,15 @@
         <td></td>
         <td><button id="startSpeakTextAsyncButton">Start Text to Speech</button></td>
       </tr>
+      <tr>
+        <td></td>
+        <td><button id="stopSpeakTextAsyncButton">Stop Text to Speech</button></td>
+      </tr>
     </table>
   </div>
 
   <script src="~/js/microsoft.cognitiveservices.speech.sdk.bundle.js" asp-append-version="true"></script>
+  <script src="~/js/constants.js" asp-append-version="true"></script>
   <script src="~/js/lia.js" asp-append-version="true"></script>
 
   <script>
@@ -91,8 +96,8 @@
 
       startSpeakTextAsyncButton.addEventListener("click", function () {
         startSpeakTextAsyncButton.disabled = true;
-        helloFromLizy();
-
+        //
+        iniciar();
       });
     });
   
