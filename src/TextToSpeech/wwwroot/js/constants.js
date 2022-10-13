@@ -8,9 +8,13 @@ const RESPOSTA_NOTA_SERVICO_OU_VENDA = "Emitir nota de serviço ou de venda?";
 
 const RESPOSTA_EMISSAO_NFE_PEGUNTAR_NUMERO_VENDA = "Certo. E qual o número da venda?";
 
-const RESPOSTA_EMISSAO_NFE = "Ok. Só um instante enquanto emito a nota para você.";
+const RESPOSTA_EMISSAO_NFSE_PEGUNTAR_NUMERO_VENDA_SERVICO = "Certo. E qual o número da venda do serviço?";
+
+const RESPOSTA_EMISSAO = "Ok. Só um instante enquanto emito a nota para você.";
 
 const RESPOSTA_NFE_EMITIDA = "A solicitação da emissão da Nota Fiscal de Venda foi concluída. Verifique no menu de Faturamento o status da emissão.";
+
+const RESPOSTA_NFSE_EMITIDA = "A solicitação da emissão da Nota Fiscal de Serviço foi concluída. Verifique no menu de Faturamento o status da emissão.";
 
 const POSSIBILIDADES_FRASE_EMITIR_NOTA = ["emitir nota", "emitir nota.", "emitir nota fiscal.", "emitir nota fiscal"];
 
@@ -28,3 +32,18 @@ const POSSIBILIDADES_FRASE_EMITIR_NOTA_VENDA = ["emitir nota de venda.",
                                                 "di venda",
                                                 "venda",
                                                 "venda.",];
+
+const POSSIBILIDADES_FRASE_EMITIR_NOTA_SERVICO = ["emitir nota de serviço.",
+                                                "emitir nota de serviço", 
+                                                "emitir nota serviço.",
+                                                "emitir nota serviço",
+                                                "emitir nfse", 
+                                                "emitir nfse.", 
+                                                "emitir nota fiscal de serviço",
+                                                "emitir nota fiscal de serviço.",
+                                                "de serviço",
+                                                "de serviço.",
+                                                "di serviço.",
+                                                "di serviço",
+                                                "serviço",
+                                                "serviço.",];

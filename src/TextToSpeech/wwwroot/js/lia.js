@@ -46,6 +46,7 @@ function ouvir(){
     //  recognizer.addIntent("Oi, lia.", "OiLia_I3");
      let permiteFalar = false;
      let emitirNFe = false;
+     let emitirNFSe = false;
 
     recognizer.startContinuousRecognitionAsync();
 
@@ -55,6 +56,7 @@ function ouvir(){
         falar(RESPOSTA_O_QUE_DESEJA_FAZER);
         permiteFalar = true;
         emitirNFe = false;
+        emitirNFSe = false;
       }
 
       //INTERACAO EMISSAO DE NOTA - INICIO
@@ -66,10 +68,14 @@ function ouvir(){
           falar(RESPOSTA_EMISSAO_NFE_PEGUNTAR_NUMERO_VENDA);
           emitirNFe = true;
         }
+        else if(isInArray(e.result.text.toLowerCase(), POSSIBILIDADES_FRASE_EMITIR_NOTA_SERVICO)){
+          falar(RESPOSTA_EMISSAO_NFSE_PEGUNTAR_NUMERO_VENDA_SERVICO);
+          emitirNFSe = true;
+        }
         else if(isNumeric(e.result.text)){
           if(emitirNFe){
             
-          falar(RESPOSTA_EMISSAO_NFE);
+          falar(RESPOSTA_EMISSAO);
 
           var delayInMilliseconds = 6000; //1 second
 
@@ -81,9 +87,24 @@ function ouvir(){
           }, delayInMilliseconds);
 
           }
+          else if(emitirNFSe){
+            
+            falar(RESPOSTA_EMISSAO);
+  
+            var delayInMilliseconds = 6000; //1 second
+  
+            setTimeout(function() {
+            falar(RESPOSTA_NFSE_EMITIDA);
+            emitirNFe = false;
+            permiteFalar = false;
+              //your code to be executed after 1 second
+            }, delayInMilliseconds);
+  
+            }
         }
   
       }
+      //INTERAÇÃO EMISSAO NOTA - FINAL
 
         // switch (e.result.reason) {
 
