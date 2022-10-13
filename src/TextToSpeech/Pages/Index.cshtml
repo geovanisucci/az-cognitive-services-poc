@@ -83,6 +83,7 @@
   </div>
 
   <script src="~/js/microsoft.cognitiveservices.speech.sdk.bundle.js" asp-append-version="true"></script>
+  <script src="~/js/utils.js" asp-append-version="true"></script>
   <script src="~/js/constants.js" asp-append-version="true"></script>
   <script src="~/js/lia.js" asp-append-version="true"></script>
 
@@ -97,7 +98,7 @@
       startSpeakTextAsyncButton.addEventListener("click", function () {
         startSpeakTextAsyncButton.disabled = true;
         //
-        iniciar();
+        ouvir();
       });
     });
   
