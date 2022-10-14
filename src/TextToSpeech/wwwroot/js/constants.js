@@ -1,3 +1,5 @@
+const BASE_URL_FATURAMENTO = "http://localhost:5012/"
+
 const SAUDACOES_LIZY = "Oi! Eu sou a LIA, a inteligência artificial do Lizy ERP. A partir de agora, é só falar Oi LIA que estou te ouvindo.";
 
 const POSSIBILIDADES_FRASE_OI_LIA = ["Oi, Lia.", "Oi Lia", "Oi, lia.", "Oi, lia"];
